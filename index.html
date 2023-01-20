@@ -15,11 +15,11 @@
   </style>
   <body>	
   <h1>圍灐的空间</h1>
-  <input type="text"/>
+  <input name="qq" type="text"/>
       <img src=""/>
     <script> 
-      let qq = "622139374"
-      let url = "http://q.qlogo.cn/headimg_dl?dst_uin="+qq+"&spec=640&img_type=jpg"
+      let a = document.querySelector("qq")   
+      let url = "http://q.qlogo.cn/headimg_dl?dst_uin="+a+"&spec=640&img_type=jpg"
       let img = document.querySelector("img")
       img.src = url
     </script>
