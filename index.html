@@ -16,12 +16,16 @@
   <body>	
   <h1>圍灐的空间</h1>
   <input type="text"/>
+  <button>确定</button>
       <img src=""/>
     <script> 
-      let input = document.querySelector("input")   
-      let url = "http://q.qlogo.cn/headimg_dl?dst_uin="+input+"&spec=640&img_type=jpg"
-      let img = document.querySelector("img")
-      img.src = url
+      let button = document.querySelector("button");
+      button.onclick = function(){
+      let input = document.querySelector("input");
+      let url = "http://q.qlogo.cn/headimg_dl?dst_uin="+input+"&spec=640&img_type=jpg";
+      let img = document.querySelector("img");
+      img.src = url;
+      }
     </script>
   </body>
   </html>
