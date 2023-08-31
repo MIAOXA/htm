@@ -2,31 +2,71 @@
     margin: 0;
     padding: 0;
 }
+#a {
+    margin: 2vh auto;
+    width: 100vw;
+}
+#a2 {
+    margin-bottom: 20px;
+}
+#a3 {
+    text-align: center;
+    font-weight: bold;
+    margin: 50px;
+}
+#png {
+    min-width: 400px;
+    max-width: 400px;
+    height: auto;
+    border-top-left-radius: 20% 20%;
+    border-top-right-radius: 20% 20%;
+    border-bottom-left-radius: 20% 20%;
+    border-bottom-right-radius: 20% 20%;
+}
+  #text {
+        text-align: center;
+        color: #f6c9cc;
+    }
+.text2 {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-left: 100px;
+    color: #fd97a4;
+}
+#text3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#counter-button {
+    background-color: #ee816d88;
+    border: none;
+    border-radius: 20px;
+    color: #fdecf4;
+    padding: 20px 200px;
+    text-decoration: none;
+    font-size: 2em;
 
+    position: relative;
+    overflow: hidden;
+    box-shadow: 20px 20px 20px -5px #ee816d;
+}
+#footer {
+    background-color: #fdecf4;
+    color: #000000;
+    padding: 20px 0vw;
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+  }
 body {
-    background-color: #9d88d3;
+    background-color: #f6c9cc;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 0em;
     color: white;
     overflow-x: hidden;
 }
-
-.wrapper {
-    position: relative;
-}
-
-.preload {
-    position: absolute;
-    left: 0;
-    top: 0;
-    visibility: hidden;
-}
-
-#content {
-    margin: 2vh auto;
-    width: 80vw;
-}
-
 h1 {
     text-align: center;
     font-size: 3em;
@@ -38,72 +78,56 @@ h2 {
     font-weight: bold;
     font-size: 1.5em;
 }
-
 hr {
     border-bottom: 6px dashed white;
     border-top: none;
     border-left: none;
     border-right: none;
 }
-
-#subtitle-seperator {
-    margin-bottom: 10px;
-}
-
-#counter-container {
-    text-align: center;
-    font-weight: bold;
-    margin: 64px 0;
-}
-
-#counter-container>p {
-    text-shadow: #9d88d3 0 0 10px, #9d88d3 0 0 10px, #9d88d3 0 0 10px, #9d88d3 0 0 10px, #9d88d3 0 0 10px;
-}
-
 #global-counter {
-    color: #574f84;
+    color: #ee816d;
     font-size: 2em;
 }
 
 #local-counter {
-    color: #574f84;
+    color: #ee816d99;
     font-size: 0.75em;
 }
-
-#counter-button {
-    background-color: #574f84;
-    border: none;
-    border-radius: 16px;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    margin-top: 16px;
-
-    position: relative;
-    overflow: hidden;
-    box-shadow: 6px 7px 40px -4px rgba(0, 0, 0, 0.2);
-}
-
 #counter-button:hover {
-    background-color: #2d2463;
+    background-color: #fd97a4;
 }
-
 #counter-button span {
     position: absolute;
-    border-radius: 50%;
-    background-color: #ffffff50;
+    border-radius: 10%;
+    background-color: #abcde9;
 
-    width: 100px;
-    height: 100px;
-    margin-top: -50px;
-    margin-left: -50px;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
 
-    animation: ripple 1s;
-    opacity: 0;
+    animation: ripple 0.6s;
+    opacity: 3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes ripple {
     from {
@@ -117,25 +141,9 @@ hr {
     }
 }
 
-#footer {
-    background-color: white;
-    color: black;
-    padding: 16px 10vw;
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-  }
 
-#herta-card {
-    min-width: 256px;
-    max-width: 720px;
-    height: auto;
-    border-top-left-radius: 2% 3.5%;
-    border-top-right-radius: 2% 3.5%;
-    border-bottom-left-radius: 2% 3.5%;
-    border-bottom-right-radius: 2% 3.5%;
-}
+
+
 
 .footer-icon {
     display: inline-block;
@@ -151,17 +159,9 @@ hr {
     color: #000000;
 }
 
-.footer-icon-text {
-    display: inline-block;
-    vertical-align: middle;
-    font-weight: bold;
-    margin-left: 6px;
-}
 
-#footer-repository-text {
-    margin-top: 32px;
-    margin-bottom: 16px;
-}
+
+
 
 @media screen and (max-width: 2240px) {
     .grid-item {
@@ -195,9 +195,7 @@ hr {
         flex-wrap: wrap;
     }
 
-    #footer-text {
-        text-align: center;
-    }
+  
 
     #footer-header-text {
         margin-bottom: 8px;
