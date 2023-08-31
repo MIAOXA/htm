@@ -1,32 +1,94 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
+<head>
+    <meta charset="utf-8" />
+    <title>转圈圈 Kuru~</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</head>
 
-  <head>
+<body>
+    <main class="wrapper">
+        <img src="" class="preload" />
+        <img src="" class="preload" />
+        <div id="content">
+            <h1>欢迎来到黑塔转圈圈</h1>
+            <hr id="subtitle-seperator" />
+            <h2>
+                黑塔同人站, 最 <del>烦人</del> 聪明的科学家给你转圈圈
+            </h2>
+            <div id="counter-container">
+                <h3>黑塔已经转了</h3>
+                <br />
+                <br />
+                <p id="global-counter">0</p>
+                <p id="local-counter">0</p>
+                <br />
+                <br />
+                <p>圈</p>
+                <button id="counter-button">
+                    转晕黑塔!
+                </button>
+            </div>
+            <hr />
+            <div id="grid">
+                <noscript>Your browser does not support JavaScript or JavaScript has been
+                    disabled.<br />This website relies on JavaScript, so please enable it
+                    or use another browser.</noscript>
+            </div>
+        </div>
+        </main>
 
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	<title>MIAOX</title>
+    <div id="footer">
 
-  </head>
-  <style>
-    img{
-	  width:500px;
-	  height:500px;
-	  }
-  </style>
-  <body>
-  
-  <img src="1693402000949.png" width="1080" height="2340"/>
-  
-  <h1>MIAOX-晓小</h1>
-  <input type="text"/>
-  <button>确定</button>
-      <img src=""/>
-    <script> 
-      let qq = 1142116227
-      let url = "http://q.qlogo.cn/headimg_dl?dst_uin="+qq+"&spec=640&img_type=jpg";
-      let img = document.querySelector("img");
-      img.src = url;
-      
-    </script>
-  </body>
-  </html>
+        <img id="herta-card" loading="lazy" src="img/card.jpg" alt="" />
+
+        <div id="footer-text">
+
+           
+
+            <p id="footer-repository-text">
+
+                原作者：
+
+            </p>
+
+            <p>
+
+                <a href="https://github.com/duiqt/herta.kuru" target="_blank"><iconify-icon icon="mdi:github"
+
+                        id="github-footer-icon" class="footer-icon"></iconify-icon><span
+
+                        class="footer-icon-text">herta_kuru repo</span></a>
+
+            </p>
+
+<p id="footer-repository-text">
+
+                当前版本作者：
+
+            </p>
+
+            <p>
+
+                <a href="https://github.com/aaawa2020/herta_kuru-Chinese" target="_blank"><iconify-icon icon="mdi:github"
+
+                        id="github-footer-icon" class="footer-icon"></iconify-icon><span
+
+                        class="footer-icon-text">herta_kuru chinese</span></a>
+
+            </p>
+
+        </div>
+
+    </div>
+   
+</body>
+<script src="script.js" async></script>
+
+</html>
