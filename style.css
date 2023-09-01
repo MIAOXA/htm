@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 #a {
     margin: 2vh auto;
@@ -47,7 +48,20 @@
     text-decoration: none;
     font-size: 2em;
 
-    position: relative;
+  
+    overflow: hidden;
+    box-shadow: 20px 20px 20px -5px #ee816d;
+}
+#button2 {
+    background-color: #ee816d88;
+    border: none;
+    border-radius: 20px;
+    color: #fdecf4;
+    padding: 20px 74px;
+    text-decoration: none;
+    font-size: 2em;
+
+  
     overflow: hidden;
     box-shadow: 20px 20px 20px -5px #ee816d;
 }
@@ -63,9 +77,10 @@
 body {
     background-color: #f6c9cc;
     font-family: 'Roboto', sans-serif;
-    font-size: 0em;
+    font-size: 1em;
     color: white;
     overflow-x: hidden;
+    display: ;
 }
 h1 {
     text-align: center;
@@ -106,10 +121,88 @@ hr {
     margin-top: -100px;
     margin-left: -100px;
 
-    animation: ripple 0.6s;
+    animation: ripple 1s;
     opacity: 3;
 }
 
+       
+   .shell {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: ;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            transition: 1s;
+            background-color: #fdecf400;
+            overflow: hidden;
+            
+            top: 0px;
+            left: 0px;      
+     color: #ee816d;
+    padding: 20px 0px;
+        }
+    
+   .shell2 {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: ;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            transition: .8s;
+            background-color: #fdecf400;
+            overflow: hidden;
+            
+            top: 0px;
+            left: 0px;      
+     color: #ee816d;
+    padding: 20px 0px;
+    opacity: 0;
+        }
+    
+        .shell:hover{
+      
+            height: 200px
+        }
+         .shell2:hover{
+            opacity: 1;
+        }
+           .shell3:hover{
+      
+            height: 200px
+        }
+        
+ .shell3 {
+            width: 100%;
+            height: 20px;
+            display: flex;
+            justify-content: ;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            transition: 1s;
+            background-color: #fdecf4;
+            overflow: hidden;
+            
+            top: 0px;
+            left: 0px;      
+     color: #ee816d;
+    padding: 20px 0px;
+    opacity: 1;
+        }
+   .box {
+            display: block;
+            height: 20%;
+            width: 40%;
+            margin: 10px;
+            border-radius: 100px;
+            position: relative;
+            transition: 2s;
+            color: #ee816d;
+        }
 
 
 
@@ -122,135 +215,3 @@ hr {
 
 
 
-
-
-
-
-
-
-
-@keyframes ripple {
-    from {
-        opacity: 1;
-        transform: scale(0);
-    }
-
-    to {
-        opacity: 0;
-        transform: scale(10);
-    }
-}
-
-
-
-
-
-.footer-icon {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 2em;
-}
-
-#twitter-footer-icon {
-    color: #1d9bf0;
-}
-
-#github-footer-icon {
-    color: #000000;
-}
-
-
-
-
-
-@media screen and (max-width: 2240px) {
-    .grid-item {
-        width: calc(20% - 10px);
-    }
-}
-
-@media screen and (max-width: 1920px) {
-    .grid-item {
-        width: calc(25% - 10px);
-    }
-}
-
-@media screen and (max-width: 1512px) {
-    body {
-        font-size: 1.25em;
-    }
-
-    #subtitle-seperator {
-        margin-top: 3px;
-        margin-bottom: 11px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .grid-item {
-        width: calc(100% / 3 - 10px);
-    }
-
-    #footer {
-        flex-wrap: wrap;
-    }
-
-  
-
-    #footer-header-text {
-        margin-bottom: 8px;
-    }
-
-    #footer-repository-text {
-        margin-top: 16px;
-        margin-bottom: 8px;
-    }
-}
-
-@media screen and (max-width: 1265px) {
-    body {
-        font-size: 1em;
-    }
-
-    #subtitle-seperator {
-        margin-top: 6px;
-        margin-bottom: 12px;
-    }
-}
-
-@media screen and (max-width: 854px) {
-    .grid-item {
-        width: calc(50% - 10px);
-    }
-}
-
-@media screen and (max-width: 510px) {
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 1.25em;
-    }
-
-    #subtitle-seperator {
-        margin-top: 8px;
-        margin-bottom: 13px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .grid-item {
-        width: calc(100% - 10px);
-    }
-}
-
-@media screen and (max-width: 430px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    #subtitle-seperator {
-        margin-top: 10px;
-    }
-}
